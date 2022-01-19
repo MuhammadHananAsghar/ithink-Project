@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ithink</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo-container">
+        <a href="/" class="logo-x"><h2 class="logo">ithink</h2></a>
+      </div>
+      <h2 class="title">Select Model</h2>
+      <!-- Select Model Body -->
+      <div>
+        <div class="main-wrapper">
+          <div class="select-container">
+            <div>
+              <input
+                type="radio"
+                name="model"
+                id="animals"
+                value="Animals Classification"
+                checked
+              />
+              <label for="animals">
+                <img src="images/animals.png" />
+                <p>Animals Classification</p>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="model" id="flowers" value="Flowers Classification" />
+              <label for="flowers">
+                <img src="images/flowers.png" />
+                <p>Flowers Classification</p>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="model" id="scenes" value="Scenes Classification" />
+              <label for="scenes">
+                <img src="images/scenes.png" />
+                <p>Scenes Classification</p>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="model" id="text" value="Text Emotion Classification" />
+              <label for="text">
+                <img src="images/text.png" />
+                <p>Text Emotion Classification</p>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="model" id="qoutes" value="AI Generates Qoutes" />
+              <label for="qoutes">
+                <img src="images/qoutes.png" />
+                <p>AI Generates Text</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="button-sub">
+          <button class="next-model">
+            Next<i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Image Classification Container -->
+      <div class="image-classification">
+        <div class="img-header">
+          <span id="imgContTitle">title</span>
+          <i class="fas fa-times" id="crossImage"></i>
+        </div>
+        <div class="img-upload">
+          <h2>Upload Image</h2>
+          <div class="sq-upload">
+            <div class="sq1">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <span>Click here to Upload</span>
+              <input type="file" name="image" id="image" accept="image/*" />
+            </div>
+            <div class="sq2">
+              <img src="" class="uploadedImage" />
+            </div>
+          </div>
+          <button class="button-upload">Predict</button>
+        </div>
+      </div>
+      <!-- Text Classification Container -->
+      <div class="text-classification">
+        <div class="text-header">
+          <span id="textContTitle">title</span>
+          <i class="fas fa-times" id="crossText"></i>
+        </div>
+        <div class="text-upload">
+          <input type="text" name="textC" id="textC" placeholder="Enter Text....">
+          <button class="text-button-upload">Predict</button>
+        </div>
+      </div>
+      <!-- Popup Details-->
+      <div class="popup-details">
+        <div class="popup-header">
+          <span id="popupTitle">Model Can Predict</span>
+        </div>
+        <div class="model-predict-details">
+          <div class="modelDetails">
+            <span>1. Hello</span>
+            <span>1. Hello</span>
+            <span>1. Hello</span>
+            <span>1. Hello</span>
+            <span>1. Hello</span>
+            <span>1. Hello</span>
+          </div>
+        </div>
+        <button class="goModel">Go to Model</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>Created By Muhammad Hanan Asghar</span>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
